@@ -1,9 +1,9 @@
 *{ margin: 2%; padding:0; }
 .container {
 display: grid;
-grid-template-columns: repeat(4, 400px);
-grid-template-rows: repeat(4, 400px);
-grid-gap: 1rem;
+grid-template-columns: repeat(4, 200px);
+grid-template-rows: repeat(4, 200px);
+grid-gap: 0.5rem;
 
 }
 video{height: 70%;}
