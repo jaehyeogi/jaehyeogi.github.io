@@ -1,0 +1,9 @@
+*{ margin: 0; padding:0; }
+.h2{ stlye=font-size:500px;}
+#han{text-align: right}
+.side{text-align:right;
+    float:right;
+  color:grey}
+div {
+  text-align:center;
+  }
