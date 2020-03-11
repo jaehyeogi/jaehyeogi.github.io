@@ -7,3 +7,6 @@
 div {
   text-align:center;
   }
+#happy {list-style: none;}
+body a { text-decoration:none; color:black; font-family: Neue Haas Grotesk, sans-serif}
+body ul li a:hover { color:brown;  font-family: Neue Haas Grotesk, sans-serif }
