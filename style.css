@@ -71,6 +71,6 @@ body ul li a:hover { color:brown;  font-family: Neue Haas Grotesk, sans-serif }
 	##Screen = 320px에서 479px 사이
 	*/
 	@media (min-width: 320px) and (max-width: 480px) {
-		
+		font-size: 10%;
 		img { max-width: 100%; height: auto; }
 		}
