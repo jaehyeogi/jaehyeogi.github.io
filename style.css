@@ -1,19 +1,23 @@
+html { -webkit-text-size-adjust: none; }
+
+
 *{ margin: 0; padding:0; }
 .h2{ stlye=font-size:500px;}
 #han{text-align: right}
 .side{text-align:right;
     float:right;
   color:grey}
+
+
 div {
-  text-align:center;
+text-align:center;
   }
+
 #happy {list-style: none;}
 body a { text-decoration:none; color:black; font-family: Neue Haas Grotesk, sans-serif}
 body ul li a:hover { color:brown;  font-family: Neue Haas Grotesk, sans-serif }
 
-	
-
-    ##Device = Desktops
+##Device = Desktops
 	##Screen = 1281px to higher resolution desktops
 	##Device = 데스크탑
 	##Screen = 1281px 이상 해상도 데스크탑
@@ -21,7 +25,8 @@ body ul li a:hover { color:brown;  font-family: Neue Haas Grotesk, sans-serif }
 	@media (min-width: 1281px) {
 		.img-wrapper { width: 100%; }
 		img { max-width: 40%; height: auto; }
-			}
+		.calender-content {	padding-bottom: 45%; }
+	}
 	/*
 	##Device = Laptops, Desktops
 	##Screen = B/w 1025px to 1280px
@@ -32,7 +37,8 @@ body ul li a:hover { color:brown;  font-family: Neue Haas Grotesk, sans-serif }
 	@media (min-width: 1025px) and (max-width: 1280px) {
 		.img-wrapper { width: 100%; }
 		img { max-width: 50%; height: auto; }
-		}
+		.calender-content {	padding-bottom: 55%; }
+	}
 	/*
 	##Device = Tablets, Ipads (portrait),
 	##Screen = B/w 768px to 1024px
@@ -41,9 +47,8 @@ body ul li a:hover { color:brown;  font-family: Neue Haas Grotesk, sans-serif }
 	*/
 
 	@media (min-width: 768px) and (max-width: 1024px) {
-		.img-wrapper { width: 100%; }
 		img { max-width: 60%; height: auto; }
-		}
+	}
 	/*
 	##Device = Tablets, Ipads (landscape)
 	##Screen = B/w 768px to 1024px
@@ -51,9 +56,8 @@ body ul li a:hover { color:brown;  font-family: Neue Haas Grotesk, sans-serif }
 	##Screen = 768px에서 1024px 사이
 	*/
 	@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-		.img-wrapper { width: 100%; }
 		img { max-width: 70%; height: auto; }
-		}
+	}
 	/*
 	##Device = Low Resolution Tablets, Mobiles (Landscape)
 	##Screen = B/w 481px to 767px
@@ -61,21 +65,21 @@ body ul li a:hover { color:brown;  font-family: Neue Haas Grotesk, sans-serif }
 	##Screen = 481px에서 767px 사이
 	*/
 	@media (min-width: 481px) and (max-width: 767px) {
-		.img-wrapper { width: 100%; }
 		img { max-width: 80%; height: auto; }
-		}
+	}
 	/*
 	##Device = Most of the Smartphones Mobiles (Portrait)
 	##Screen = B/w 320px to 479px
 	##Device = 대부분의 스마트폰 모바일 기기(세로)
 	##Screen = 320px에서 479px 사이
 	*/
-        @media (min-width: 200px) and (max-width: 480px) {
-          .wrapper{font-size:90%; }
-            header{font-size:47%;}
-            body{
-                 margin-top: 10%;
-                 margin-left: auto;
-                 margin-right: auto;}
-            img { max-width: 90%; height: auto; }
+	@media (min-width: 200px) and (max-width: 480px) {
+     .wrapper{font-size:90%; }
+      header{font-size:47%;}
+      body{
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;}
+      img { max-width: 90%; height: auto; }
+
 		}
