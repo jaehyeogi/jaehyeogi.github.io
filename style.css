@@ -70,7 +70,12 @@ body ul li a:hover { color:brown;  font-family: Neue Haas Grotesk, sans-serif }
 	##Device = 대부분의 스마트폰 모바일 기기(세로)
 	##Screen = 320px에서 479px 사이
 	*/
-	@media (min-width: 320px) and (max-width: 480px) {
-		font-size: 10%;
-		img { max-width: 100%; height: auto; }
+        @media (min-width: 200px) and (max-width: 480px) {
+          .wrapper{font-size:90%; }
+            header{font-size:47%;}
+            body{
+                 margin-top: 10%;
+                 margin-left: auto;
+                 margin-right: auto;}
+            img { max-width: 90%; height: auto; }
 		}
