@@ -1,21 +1,20 @@
 html { -webkit-text-size-adjust: none; }
-
-
-*{ margin: 0; padding:0; }
-.h2{ stlye=font-size:500px;}
-#han{text-align: right}
-.side{text-align:right;
-    float:right;
-  color:grey}
-
-
-div {
-text-align:center;
-  }
-
-#happy {list-style: none;}
-body a { text-decoration:none; color:black; font-family: Neue Haas Grotesk, sans-serif}
+body, h1, p, ul{ margin:0; padding:0; }
+body a {text-decoration:none; color:black; font-family: Neue Haas Grotesk, sans-serif }
+body ul li{list-style: none;}
 body ul li a:hover { color:brown;  font-family: Neue Haas Grotesk, sans-serif }
+div{text-align: center;}
+.wrapper{}
+.nav{
+  display:grid;
+  grid-template-columns: repeat(6, 3rem);
+  grid-auto-rows: auto;
+  grid-gap: 1.5em;
+  font:bold; font-size:1.25rem;
+  justify-content: center;
+}
+
+div a {color:rgb(255, 99, 71);font:bold;}
 
 ##Device = Desktops
 	##Screen = 1281px to higher resolution desktops
@@ -74,12 +73,14 @@ body ul li a:hover { color:brown;  font-family: Neue Haas Grotesk, sans-serif }
 	##Screen = 320px에서 479px 사이
 	*/
 	@media (min-width: 200px) and (max-width: 480px) {
-     .wrapper{font-size:90%; }
-      header{font-size:47%;}
-      body{
-        margin-top: 10%;
+    a img{sdsd; }
+    header{font-size:65%;
+    }
+    body{
         margin-left: auto;
-        margin-right: auto;}
-      img { max-width: 90%; height: auto; }
-
+        margin-right: auto;
+              }
+    img { max-width: 90%; height: auto; }
+    .wrapper{padding-top:23px;}
+    .nav{ grid-gap: 1rem;}
 		}
