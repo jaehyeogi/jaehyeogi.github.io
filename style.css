@@ -4,17 +4,8 @@ body a {text-decoration:none; color:black; font-family: Neue Haas Grotesk, sans-
 body ul li{list-style: none;}
 body ul li a:hover { color:brown;  font-family: Neue Haas Grotesk, sans-serif }
 div{text-align: center;}
-.wrapper{}
-.nav{
-  display:grid;
-  grid-template-columns: repeat(6, 3rem);
-  grid-auto-rows: auto;
-  grid-gap: 1.5em;
-  font:bold; font-size:1.25rem;
-  justify-content: center;
-}
 
-div a {color:rgb(255, 99, 71);font:bold;}
+
 /* Create four equal columns that sits next to each other */
 .container{display: flex;
            flex-wrap: wrap;
@@ -48,8 +39,15 @@ div a {color:rgb(255, 99, 71);font:bold;}
   }
 }
 
-
-
+.nav{
+  display:grid;
+  grid-template-columns: repeat(6, 3rem);
+  grid-auto-rows: auto;
+  grid-gap: 1.5em;
+  font:bold; font-size:1.25rem;
+  justify-content: center;
+}
+div a {color:rgb(255, 99, 71);font:bold;}
 
 ##Device = Desktops
 	##Screen = 1281px to higher resolution desktops
@@ -57,10 +55,8 @@ div a {color:rgb(255, 99, 71);font:bold;}
 	##Screen = 1281px 이상 해상도 데스크탑
 	*/
 	@media (min-width: 1281px) {
-		.img-wrapper { width: 100%; }
 		img { max-width: 40%; height: auto; }
-		.calender-content {	padding-bottom: 45%; }
-	}
+
 	/*
 	##Device = Laptops, Desktops
 	##Screen = B/w 1025px to 1280px
@@ -108,14 +104,13 @@ div a {color:rgb(255, 99, 71);font:bold;}
 	##Screen = 320px에서 479px 사이
 	*/
 	@media (min-width: 200px) and (max-width: 480px) {
-    a img{sdsd; }
-    header{font-size:65%;
-    }
+    header{font-size:65%;}
     body{
         margin-left: auto;
         margin-right: auto;
               }
-    img { max-width: 90%; height: auto; }
+    .img { max-width: 90%; height: auto; }
     .wrapper{padding-top:23px;}
     .nav{ grid-gap: 1rem;}
 		}
+
