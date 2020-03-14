@@ -15,6 +15,41 @@ div{text-align: center;}
 }
 
 div a {color:rgb(255, 99, 71);font:bold;}
+/* Create four equal columns that sits next to each other */
+.container{display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           }
+.items {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 0.5rem;
+}
+.items img {
+  margin-top: 1.5rem;
+  vertical-align: middle;
+  width: 90%;
+  height: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .items {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .items {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
 
 ##Device = Desktops
 	##Screen = 1281px to higher resolution desktops
