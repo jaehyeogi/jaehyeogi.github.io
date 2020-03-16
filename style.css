@@ -80,6 +80,7 @@ div a {color:rgb(255, 99, 71);font:bold;}
         margin-right: auto;
               }
     img { max-width: 90%; height: auto; }
+    .text{max-width:90%}
     .wrapper{padding-top:23px;}
     .nav{ grid-gap: 1rem;}
       }
