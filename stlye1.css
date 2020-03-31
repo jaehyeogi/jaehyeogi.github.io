@@ -23,6 +23,9 @@ div {
 }
 video{height: 70%;
       }
+      footer{position: fixed; right:3%;bottom:3%;}
+      .smile{height:33px; width:33px;padding:0; margin: 0;}
+      .bt{height:30px; width:42px;padding:0; margin: 0;}
       .nav1{
         display:grid;
         grid-template-columns: repeat(6, 3rem);
