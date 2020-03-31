@@ -19,6 +19,7 @@
  <div class="nav-what"><a href = "bada21.html" title="waves">what</a></div>
  <div class="nav-life"><a href = "life.html" title="soon">life</a></div>
  <div class="nav-is"  style="padding-right:30px"><a href = "is.html" title="soon">is</a></div>
+
 </div>
 </div>
 <body style="
@@ -27,21 +28,18 @@
  <br>
  <br>
  <img src="photos/jjh.png"  width="109" height="149"><br>
- <a href>
-   <input class="bt" type="button" style="background: url(photos/smile1.png)"  onclick="alert('Jaehyeok')">
-   <input class="bt" type="button" style="background: url(photos/smile.png)"  onclick="alert('the genius')">
-   <input class="bt" type="button" style="background: url(photos/smile2.png)"  onclick="alert('joke or not')">
+
+   <input class="smile" type="button" style="background: url(photos/smile1.png)"  onclick="alert('Jaehyeok')">
+   <input class="smile" type="button" style="background: url(photos/smile.png)"  onclick="alert('the genius')">
+   <input class="smile" type="button" style="background: url(photos/smile2.png)"  onclick="alert('joke or not')">
   </input>
  <br>
  <style>
   h1 {
     color: black;font-size:200%;
      }
-  h3{color: black;font-size:150%;}
-.bt{height:33px; width:33px;padding:0; margin: 0;}
  </style>
  <br>
-
  <ul>
   <li>Jaehyeok Jang</li>
   <li>13.03.1994, Jeju, South Korea</li>
@@ -59,4 +57,15 @@
  </div>
  <br>
 </body>
+<footer>
+  <input class="bt" type="button" style="background: url(photos/sun.png)"  onclick="
+   document.querySelector('body').style.backgroundColor = 'black';
+   document.querySelector('body').style.color = 'white';
+   document.querySelector('a').style.color = 'white';
+   ">
+  <input class="bt" type="button" style="background: url(photos/moon.png)"  onclick="
+   document.querySelector('body').style.backgroundColor = 'white';
+   document.querySelector('body').style.color = 'black';
+     ">
+   </footer>
 </html>
