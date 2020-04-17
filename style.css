@@ -20,7 +20,7 @@ input[id="menuicon"]:checked + label + div{left:0;}
 h1{z-index: 1;}
 footer{position: fixed; right:3%;bottom:3%;}
 .smile{height:33px; width:33px;padding:0; margin: 0;}
-.bt{height:30px; width:42px;padding:0; margin: 0;}
+.bt{height:30px; width:42px;padding:0; margin: 0; }
 .nav{
   display:grid;
   grid-template-columns: repeat(6, 3rem);
@@ -57,14 +57,7 @@ footer{position: fixed; right:3%;bottom:3%;}
   margin-top: 8px;
   width: 100%;
 }
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
+
    @media (min-width: 1281px) {
       img { max-width: 40%; height: auto; }
    }
@@ -115,15 +108,12 @@ footer{position: fixed; right:3%;bottom:3%;}
    @media (min-width: 200px) and (max-width: 480px) {
      header{font-size:65%;
      }
-    body{
-        margin-left: auto;
-        margin-right: auto;
-              }
+   body{margin-top: 1px;}
     img { max-width: 90%; height: auto; }
     div[class="sidebar"]{height:9.1%;}
     div[id="nav1"]{margin-top:8%;}
     .text{max-width:90%;}
-    .wrapper{padding-top:23px;}
+    
     .nav{ grid-gap: 1rem;}
       .pixel-items {
       -ms-flex: 100%;
