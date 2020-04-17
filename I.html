@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
 <title>LOVEALWAYSWINS</title>
 <link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src = "script.js"> </script>
 </head>
 <input type="checkbox" id="menuicon">
 <label for="menuicon">
@@ -12,6 +14,9 @@
   <span></span>
   <span></span>
 </label>
+<body style="
+    margin:5%;
+    ">
 <div class="sidebar"><div class="nav1" style="margin-top:6.4%;">
  <div class="nav-I" style="padding-left:30px" ><a href = "I.html" title="about">I</a></div>
  <div class="nav-don't"><a href = "dont.html" title="worldwidepixelove" >dont</a></div>
@@ -22,9 +27,7 @@
 
 </div>
 </div>
-<body style="
-    margin:5%;
-    ">
+
  <br>
  <br>
  <img src="photos/jjh.png"  width="109" height="149"><br>
@@ -34,11 +37,7 @@
    <input class="smile" type="button" style="background: url(photos/smile2.png)"  onclick="alert('joke or not')">
   </input>
  <br>
- <style>
-  h1 {
-    color: black;font-size:200%;
-     }
- </style>
+
  <br>
  <ul>
   <li>Jaehyeok Jang</li>
@@ -59,14 +58,10 @@
 </body>
 <footer>
   <input class="bt" type="button" style="background: url(photos/moon.png)"  onclick="
-   document.querySelector('body').style.backgroundColor = 'black';
-   document.querySelector('body').style.color = 'white';
-   document.querySelector('h1').style.color = '#F5F5F5';
+   nighthandler();
       ">
   <input class="bt" type="button" style="background: url(photos/sun.png)"  onclick="
-   document.querySelector('body').style.backgroundColor = 'white';
-   document.querySelector('body').style.color = 'black';
-   document.querySelector('h1').style.color = 'black';
+    dayhandler();
      ">
    </footer>
 </html>
