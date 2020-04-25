@@ -3,10 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-<title>NOTASAMESHAPE</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="naver-site-verification" content="40796ea2e23033eb48ccfd83e407668371483ead" />
+<meta name="robots" content="index,follow">
+<meta name="description" content="JJH">
+<meta property="og:type" content="website">
+<meta property="og:title" content="NOTASAMESHAPE">
+<meta property="og:description" content="JJH">
+<meta property="og:url" content="https://jaehyeogi.github.io/">
+<title>NOT A SAME SHAPE</title>
+<link rel="canonical" href="https://jaehyeogi.github.io/">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon/orange.ico">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src = "script.js"> </script>
+<script src = "js/script.js"> </script>
 </head>
 <header style="padding-bottom: 5%;" >
  <div><h1 style="color: #000;;text-align: center;font-size:270%;">NOT A SAME SHAPE</h1></div>
@@ -26,7 +35,6 @@
   <div class="nav-is"  style="padding-right:30px"><a href = "is.html" title="soon">is</a></div>
  </div>
  </div>
-
 <body style="margin:3%;">
   <style>
   img{float: left; padding-right: 15px;}
@@ -65,11 +73,7 @@
       img { max-width: 40%; height: auto; }
       .coffee{padding-bottom:6%;}
    }
-
-  </style>
-
-
-
+</style>
   <img src="photos/coffee1.png"  alt="ikovox" width="200px"></div>
   <ul style="text-align:left; padding-bottom:10%;">
     <h4>IKOVOX - MONO</h4>
@@ -88,13 +92,11 @@
   </ul>
 </body>
 <footer>
-  <input class="bt" type="button" style="background: url(photos/sun.png)"  onclick="
-   document.querySelector('body').style.backgroundColor = 'black';
-   document.querySelector('body').style.color = 'white';
-     ">
   <input class="bt" type="button" style="background: url(photos/moon.png)"  onclick="
-   document.querySelector('body').style.backgroundColor = 'white';
-   document.querySelector('body').style.color = 'black';
+   nighthandler();
+      ">
+  <input class="bt" type="button" style="background: url(photos/sun.png)"  onclick="
+    dayhandler();
      ">
    </footer>
 </html>
