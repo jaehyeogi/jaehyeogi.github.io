@@ -7,6 +7,9 @@ var Body = {
   setBackgroundColor: function(color){
     document.querySelector('body').style.backgroundColor = color;
   }
+  H3color:function(color){
+document.querySelector('h3').style.backgroundColor = color;
+}
 }
 var Links = {
 setColor:function(color){
@@ -24,12 +27,14 @@ function nightdayhandler(self){
   if(actionButton.style.background === 'url("photos/moon.png")'){
   Body.setBackgroundColor('black');
   Body.setColor('white');
+  Body.H3color('white');
   Links.setColor('white');
   actionButton.style.background = "url('photos/sun.png')";
  }
  else{
    Body.setBackgroundColor('white');
    Body.setColor('black');
+   Body.H3color('black');
    Links.setColor('black');
    actionButton.style.background = "url('photos/moon.png')";
      }
