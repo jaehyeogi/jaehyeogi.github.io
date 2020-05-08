@@ -45,16 +45,25 @@
     flex: 25%;
     max-width: 25%;
     padding: 0 0.5rem;
-    border:1px solid #000;
-     }
+        }
   .items img {
     margin-top: 1.5rem;
     vertical-align: middle;
     width: 90%;
     height: auto;
-    transition:transform 0.5s;
-  }
-   .items:hover > img{scale(1.05);} 
+      }
+   .img_box{
+     transform: translate(0%,0%);
+   border:1px solid #000;
+   }
+ .img_box > img{position: absolute;
+   transform: translate(0%,0%);
+     transition:transform 0.5s;
+ }
+   .img_box:hover > img{transform:translate(0%,0%) scale(1.05);} 
+   
+   
+   
    
   @media screen and (max-width: 800px) {
     .items {
