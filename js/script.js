@@ -28,19 +28,19 @@ setColor:function(color){
 function nightdayhandler(self){
   var target = document.querySelector('body');
   var actionButton = document.getElementById('action');
-  if(actionButton.style.background === 'url("moon.png")'){
+  if(actionButton.style.background === 'url(photos/"moon.png")'){
   Body.setBackgroundColor('black');
   Body.setColor('white');
   Body.H3Color('white');
   Links.setColor('white');
-  actionButton.style.background = "url('sun.png')";
+  actionButton.style.background = "url(photos/'sun.png')";
  }
  else{
    Body.setBackgroundColor('white');
    Body.setColor('black');
    Body.H3Color('black');
    Links.setColor('black');
-   actionButton.style.background = "url('moon.png')";
+   actionButton.style.background = "url(photos/'moon.png')";
      }
 }
 
