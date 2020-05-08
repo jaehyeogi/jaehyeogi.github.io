@@ -17,8 +17,8 @@ var Body = {
 var Links = {
 setColor:function(color){
   var alist = document.querySelectorAll('a');
-  var i = 0;
-  while(5 < i < alist.length){
+  var i = 5;
+  while( i < alist.length){
   alist[i].style.color = color;
   i = i + 1;
    }
