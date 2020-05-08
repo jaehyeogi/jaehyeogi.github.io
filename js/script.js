@@ -6,9 +6,9 @@ var Body = {
   // ,필수
   setBackgroundColor: function(color){
     document.querySelector('body').style.backgroundColor = color;
-  }
-  H3color:function(color){
-document.querySelector('h3').style.backgroundColor = color;
+  },
+  h1color:function(color){
+document.querySelector('h1').style.backgroundColor = color;
 }
 }
 var Links = {
@@ -27,14 +27,14 @@ function nightdayhandler(self){
   if(actionButton.style.background === 'url("photos/moon.png")'){
   Body.setBackgroundColor('black');
   Body.setColor('white');
-  Body.H3color('white');
+  Body.h1color('white');
   Links.setColor('white');
   actionButton.style.background = "url('photos/sun.png')";
  }
  else{
    Body.setBackgroundColor('white');
    Body.setColor('black');
-   Body.H3color('black');
+   Body.h1color('black');
    Links.setColor('black');
    actionButton.style.background = "url('photos/moon.png')";
      }
