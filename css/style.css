@@ -21,7 +21,8 @@ h1{z-index: 1;}
 footer{position: fixed; right:3%;bottom:3%;}
 .smile{height:33px; width:33px;padding:0; margin: 0;}
 .text{background-color:#01FE00;}
-.bt{height:30px; width:42px;padding:0; margin: 0; }
+.bt{height:30px; width:42px;padding:0; margin: 0; cursor: pointer; border: none; box-shadow: 1px 1px 1px #F0F0F0;
+border-radius:10px;}
 .nav{
   display:grid;
   grid-template-columns: repeat(6, 3rem);
