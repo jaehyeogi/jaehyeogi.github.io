@@ -1,0 +1,225 @@
+html {
+  -webkit-text-size-adjust: none;
+}
+
+body,
+h1,
+p,
+ul,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+body a {
+  text-decoration: none;
+  color: black;
+  font-family: Neue Haas Grotesk, sans-serif;
+}
+
+body ul li {
+  list-style: none;
+}
+
+body ul li a:hover {
+  color: brown;
+  font-family: Neue Haas Grotesk, sans-serif;
+}
+
+div a {
+  color: rgb(255, 99, 71);
+  font: bold;
+}
+
+#menuicon {
+  display: none;
+}
+
+#menuicon + label {
+  display: inline-block;
+  width: 20px;
+  height: 15px;
+  position: absolute;
+  top: 3.9%;
+  left: 3%;
+  cursor: pointer;
+}
+
+#menuicon + label span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background: #000;
+  transition: all 0.35s;
+}
+
+#menuicon + label span:nth-child(1) {
+  top: 0;
+}
+
+#menuicon + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* 비슷하게 사용할 수 있는 style top:calc(50% - 2.5px); margin-top:-2.5px;*/
+#menuicon + label span:nth-child(3) {
+  bottom: 0;
+}
+
+#menuicon:checked + label {
+  z-index: 3;
+}
+
+#menuicon:checked + label span {
+  background: White;
+  left: 5%;
+}
+
+#menuicon:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+#menuicon:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+
+#menuicon:checked + label span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+div[class='sidebar'] {
+  opacity: 98%;
+  width: 100%;
+  height: 15%;
+  background: #d1d1d1;
+  position: fixed;
+  top: 0;
+  left: -2800px;
+  z-index: 2;
+  transition: all 0.35s;
+}
+
+input[id='menuicon']:checked + label + div {
+  left: 0;
+}
+
+h1 {
+  z-index: 1;
+}
+
+div {
+  text-align: center;
+}
+
+video {
+  height: 70%;
+}
+
+footer {
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+}
+
+.smile {
+  height: 33px;
+  width: 33px;
+  padding: 0;
+  margin: 0;
+}
+
+.bt {
+  height: 30px;
+  width: 42px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav1 {
+  display: grid;
+  grid-template-columns: repeat(6, 3rem);
+  grid-auto-rows: auto;
+  grid-gap: 1.5em;
+  font: bold;
+  font-size: 1.25rem;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 12.5rem);
+  grid-template-rows: repeat(4, 12.5rem);
+  grid-gap: 0.5rem;
+  justify-content: center;
+}
+
+.item:nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  background-color: #a8b7ff;
+}
+
+.item:nth-child(2) {
+  grid-column: 2 / 4;
+  grid-row: 1;
+  background-color: #ffc89c;
+}
+
+.item:nth-child(3) {
+  grid-column: 4 / 5;
+  grid-row: 1;
+  background-color: green;
+}
+
+.item:nth-child(4) {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+  text-align: left;
+  line-height: 100%;
+  margin: 0;
+  align-self: center;
+}
+
+.item:nth-child(5) {
+  grid-column: 4 / 5;
+  grid-row: 2 / 4;
+  background-color: #faffa6;
+}
+
+.item:nth-child(6) {
+  grid-column: 1 / 2;
+  grid-row: 3 / 5;
+  background-color: #93ebc5;
+}
+
+.item:nth-child(7) {
+  grid-column: 2 / 4;
+  grid-row: 4 / 5;
+  background-color: #e88ed6;
+}
+
+.item:nth-child(8) {
+  grid-column: 4 / 5;
+  grid-row: 4 / 5;
+  background-color: black;
+}
+
+@media (min-width: 200px) and (max-width: 480px) {
+  body {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  video {
+    height: 50%;
+  }
+}
+
+body.dark #menuicon + label span {
+  background-color: #fff;
+}

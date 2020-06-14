@@ -27,19 +27,19 @@ var Links = {
 function nightdayhandler(self) {
   var target = document.querySelector('body')
   var actionButton = document.getElementById('action')
-  if (actionButton.style.background === 'url("photos/moon.png")') {
+  if (actionButton.style.background === 'url("assets/images/moon.png")') {
     Body.setBackgroundColor('black')
     Body.setColor('white')
     Body.setH1Color('white')
     Links.setColor('white')
-    actionButton.style.background = "url('photos/sun.png')"
+    actionButton.style.background = "url('assets/images/sun.png')"
     target.classList.add('dark')
   } else {
     Body.setBackgroundColor('white')
     Body.setColor('black')
     Body.setH1Color('black')
     Links.setColor('black')
-    actionButton.style.background = "url('photos/moon.png')"
+    actionButton.style.background = "url('assets/images/moon.png')"
     target.classList.remove('dark')
   }
 }
